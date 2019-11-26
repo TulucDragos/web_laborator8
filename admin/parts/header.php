@@ -20,13 +20,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="../admin_functions/add_product.php">Add Product</a>
+            <a class="nav-link" href="/../admin_functions/add_product.php">Add Product</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../admin_funtions/all_products.php">See All Products</a>
+            <a class="nav-link" href="/../admin_funtions/all_products.php">See All Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../admin_functions/logout.php ">Logout</a>
+            <a class="nav-link" href="/admin/admin_functions/logout.php ">Logout</a>
           </li>
         </ul>
       </div>

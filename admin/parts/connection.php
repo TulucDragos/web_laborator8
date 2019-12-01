@@ -10,4 +10,7 @@ if($mysqli === false){
  die("ERROR: Could not connect. " . $mysqli->connect_error);
 }
 
+if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true && $_SESSION["admin"] !== true) {
+    header("Location:/admin/neautorizat.php");
+}
 ?>

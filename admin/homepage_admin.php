@@ -7,14 +7,14 @@ if ($stmt = $mysqli->prepare($sql)) {
     if ($stmt->execute()) {
         // Store result
         $stmt->store_result();
-        var_dump($stmt);
+        //var_dump($stmt);
 
        
         if ($stmt->num_rows == 1) {
             $stmt->bind_result($id, $file_name);
             if ($stmt->fetch()) {
                 $img_src = "/content/uploads/" . $file_name;
-                var_dump($img_src) ;
+                //var_dump($img_src) ;
             }
         }
     }

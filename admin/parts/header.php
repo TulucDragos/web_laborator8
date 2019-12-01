@@ -20,7 +20,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="/../admin_functions/add_product.php">Add Product</a>
+            <a class="nav-link" href="/admin/admin_functions/add_product.php">Add Product</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/admin/admin_functions/all_products.php">See All Products</a>

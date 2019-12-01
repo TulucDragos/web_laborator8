@@ -2,8 +2,8 @@
 // Initialize the session
 session_start();
 // Check if the user is already logged in, if yes then redirect him to welcome page
-if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
-    header("../homepage_admin.php");
+if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true && $_SESSION["admin"] === true) {
+    header("Location:/admin/homepage_admin.php");
     exit;
 }
 // Include config file
@@ -107,4 +107,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </div>
 
 
-<?php require_once '/parts/footer.php';
+<?php require_once '../parts/footer.php';

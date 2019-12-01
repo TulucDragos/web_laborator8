@@ -29,6 +29,9 @@
       </div>
     </div>
 </nav>
+<div class="wrapper">
+
+
 
 <?php
 require_once('connection.php');

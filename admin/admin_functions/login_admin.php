@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Prepare a select statement
         $sql = "SELECT id, username, password FROM admin_users WHERE username = ?";
-        var_dump($stmt = $mysqli->prepare($sql));
+        //var_dump($stmt = $mysqli->prepare($sql));
         if ($stmt = $mysqli->prepare($sql)) {
             // Bind variables to the prepared statement as parameters
             $stmt->bind_param("s", $param_username);
@@ -58,6 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;
+                            $_SESSION["admin"] = true;
 
                             // Redirect user to welcome page
                             header("location: ../homepage_admin.php");

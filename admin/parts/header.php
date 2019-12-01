@@ -23,7 +23,10 @@
             <a class="nav-link" href="/../admin_functions/add_product.php">Add Product</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/../admin_funtions/all_products.php">See All Products</a>
+            <a class="nav-link" href="/admin/admin_functions/all_products.php">See All Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/admin/admin_functions/upload_image.php">Upload Image</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/admin/admin_functions/logout.php ">Logout</a>
@@ -32,6 +35,9 @@
       </div>
     </div>
 </nav>
+<div class="wrapper">
+
+
 
 <?php
 require_once('connection.php');

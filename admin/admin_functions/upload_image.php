@@ -50,4 +50,4 @@ echo $statusMsg;
 </div>
 
 <?php
-require_once '/parts/footer.php';
+require_once "/parts/footer.php";

@@ -5,16 +5,16 @@
     <?php
 // File upload path
 $targetDir = "../../content/uploads/";
-$fileName = basename($_FILES["file"]["name"]);
+$fileName = basename($_FILES["imagine"]["name"]);
 $targetFilePath = $targetDir . $fileName;
 $fileType = pathinfo($targetFilePath, PATHINFO_EXTENSION);
 
-if (isset($_POST["submit"]) && !empty($_FILES["file"]["name"])) {
+if (isset($_POST["submit"]) && !empty($_FILES["imagine"]["name"])) {
     // Allow certain file formats
     $allowTypes = array('jpg', 'png', 'jpeg', 'gif', 'pdf');
     if (in_array($fileType, $allowTypes)) {
         // Upload file to server
-        if (move_uploaded_file($_FILES["file"]["tmp_name"], $targetFilePath)) {
+        if (move_uploaded_file($_FILES["imagine"]["tmp_name"], $targetFilePath)) {
             // Insert image file name into database
             $sql = "INSERT into images (file_name) VALUES (?)";
 
@@ -42,7 +42,7 @@ echo $statusMsg;
 
     <form action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> method="post" enctype="multipart/form-data">
         Select Image File to Upload:
-        <input type="file" name="file">
+        <input type="file" name="imagine">
         <input type="submit" name="submit" value="Upload">
     </form>
 

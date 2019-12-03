@@ -1,36 +1,57 @@
-<?php
+<?php require_once 'parts/header.php'; ?>
 
-require_once('parts/header.php');
-$sql = "SELECT id, file_name FROM images WHERE id = 1";
+
+<div class="row">
+    <div class="columns large-12 small-12">
+        <h1>HELLO ADMIN</h1>
+    </div>
+</div>
+
+<?php
+$sql = "SELECT *  FROM produs";
 if ($stmt = $mysqli->prepare($sql)) {
-    
+
     if ($stmt->execute()) {
         // Store result
         $stmt->store_result();
         //var_dump($stmt);
+        ?>
+            <div clas="row">
 
-       
-        if ($stmt->num_rows == 1) {
-            $stmt->bind_result($id, $file_name);
-            if ($stmt->fetch()) {
-                $img_src = "/content/uploads/" . $file_name;
-                //var_dump($img_src) ;
-            }
+            
+        <?php
+        $stmt->bind_result($id, $nume, $pret, $imagine, $short_description, $description, $stoc, $pret_oferta, $recomandat, $categorie);
+        while($stmt->fetch()) {
+            $product_image = "/content/uploads/" . $imagine;
+        ?>
+
+
+        
+            <div class="col col-lg-4">
+            <div class="product">
+                    <div class="product-image">
+                        <img style="width:100%;" src="<?php echo $product_image ?>"/>
+                    </div>
+                    <div class="product-title">
+                        <h2><?php echo $nume ?></h2>
+                    </div>
+            </div>
+        </div>
+        <?php
+           
         }
+
     }
 }
 ?>
-    <div class="row">
-        <div class="col col-lg-12">
-            <h1>HELLO ADMIN</h1>
-            <img src="<?php echo $img_src?>">
-        </div>
-    </div>
+</div>
+</div>
+</div>
 
 
 
 <?php
 
-require_once('parts/footer.php')
+require_once 'parts/footer.php'
 
 ?>

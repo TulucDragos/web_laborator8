@@ -14,3 +14,4 @@ if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true && $_SESSION["
     header("Location:/admin/neautorizat.php");
 }
 ?>
+<div class="container">

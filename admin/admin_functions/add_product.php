@@ -40,7 +40,7 @@ if ($error != '') {
     echo $error;
 }
 ?>
-<div class="row">
+<div class="row center">
     <div class="col col-lg-12">
         <form action="" method="post">
             Nume: <input type="text" name="nume" value=""> <br>
@@ -52,7 +52,10 @@ if ($error != '') {
             Pret Oferta: <input type="number" name="pret_oferta" value=""><br>
             Produs Recomandat: <input type="text" name="recomandat" value=""><br>
             Categorie: <input type="text" name="categorie" value=""><br>
-            <input type="submit" name="submit" value="Add Product">
+            <input class="btn btn-primary" type="submit" name="submit" value="Add Product">
+            <br>
+            <br>
+
         </form>
     </div>
 </div>

@@ -20,10 +20,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="signup.php">Sign Up</a>
+            <a class="nav-link" href="/public/signup.php">Sign Up</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="login.php">Log In</a>
+            <a class="nav-link" href="/public/login.php">Log In</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/public/sign-out.php">Sign Out</a>
           </li>
         </ul>
       </div>

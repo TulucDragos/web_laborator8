@@ -53,6 +53,9 @@ if ($error != '') {
 ?>
 <div class="row center">
     <div class="col col-lg-12">
+        <div class="form-wrapper">
+
+        
     <h1><?php if ($_GET['id'] != '') { echo "Modificare Inregistrare"; }?></h1>
     <?php if ($error != '') {
         echo "<div style='padding:4px; border:1px solid red; color:red'>" . $error. "</div>";
@@ -83,7 +86,7 @@ if ($error != '') {
             ?>
 
         </form>
-
+        </div>
 
 
 <?php

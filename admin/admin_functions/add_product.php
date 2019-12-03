@@ -40,23 +40,27 @@ if ($error != '') {
     echo $error;
 }
 ?>
+
 <div class="row center">
     <div class="col col-lg-12">
-        <form action="" method="post">
-            Nume: <input type="text" name="nume" value=""> <br>
-            Pret: <input type="number" name="pret" value=""><br>
-            Selecteaza imaginea produsului: <input type="file" name="imagine" value=""><br>
-            Descriere scurta: <input type="text" name="short_description" value=""> <br>
-            Descriere: <input type="text" name="description" value=""><br>
-            Stoc: <input type="number" name="stoc" value=""><br>
-            Pret Oferta: <input type="number" name="pret_oferta" value=""><br>
-            Produs Recomandat: <input type="text" name="recomandat" value=""><br>
-            Categorie: <input type="text" name="categorie" value=""><br>
-            <input class="btn btn-primary" type="submit" name="submit" value="Add Product">
-            <br>
-            <br>
+        <div class="form-wrapper">
+            <h1>Adauga un produs nou</h1>
+            <form action="" method="post">
+                Nume: <input type="text" name="nume" value=""> <br>
+                Pret: <input type="number" name="pret" value=""><br>
+                Selecteaza imaginea produsului: <input type="file" name="imagine" value=""><br>
+                Descriere scurta: <input type="text" name="short_description" value=""> <br>
+                Descriere: <input type="text" name="description" value=""><br>
+                Stoc: <input type="number" name="stoc" value=""><br>
+                Pret Oferta: <input type="number" name="pret_oferta" value=""><br>
+                Produs Recomandat: <input type="text" name="recomandat" value=""><br>
+                Categorie: <input type="text" name="categorie" value=""><br>
+                <input class="btn btn-primary" type="submit" name="submit" value="Add Product">
+                <br>
+                <br>
 
-        </form>
+            </form>
+        </div>
     </div>
 </div>
 

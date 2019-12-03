@@ -171,3 +171,11 @@ header.masthead .bg-circle-4 {
 .col {
   float: left !important;
 }
+
+.form-wrapper {
+  margin-top: 150px;
+  padding: 20px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}

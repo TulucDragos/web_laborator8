@@ -39,13 +39,14 @@ if (isset($_POST["submit"]) && !empty($_FILES["imagine"]["name"])) {
 // Display status message
 echo $statusMsg;
 ?>
-
-    <form action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> method="post" enctype="multipart/form-data">
-        Select Image File to Upload:
-        <input type="file" name="imagine">
-        <input type="submit" name="submit" value="Upload">
-    </form>
-
+    <div class="form-wrapper">
+        <h1>Adauga o imagine</h1>
+        <form action=<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?> method="post" enctype="multipart/form-data">
+            Select Image File to Upload:
+            <input type="file" name="imagine">
+            <input type="submit" name="submit" value="Upload">
+        </form>
+    </div>
 </div>
 
 <?php

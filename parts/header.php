@@ -31,7 +31,7 @@
 </nav>
 <div class="wrapper">
 
-
+<div class="container">
 
 <?php
 require_once('connection.php');

@@ -58,7 +58,6 @@ if ($error != '') {
                 <input class="btn btn-primary" type="submit" name="submit" value="Add Product">
                 <br>
                 <br>
-
             </form>
         </div>
     </div>

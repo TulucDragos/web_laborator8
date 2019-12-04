@@ -3,7 +3,7 @@
 
 <div class="row">
     <div class="columns large-12 small-12">
-        <h1>HELLO ADMIN</h1>
+        <h1>HELLO admin</h1>
     </div>
 </div>
 

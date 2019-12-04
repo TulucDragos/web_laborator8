@@ -19,12 +19,21 @@ if (isset($_GET['id']) && is_numeric($_GET['id'])) {
         <div class="row">
             <div class="col col-lg-6">
                 <div class="product">
-                        <div class="product-image">
-                            <img src="<?php echo $product_image ?>"/>
-                        </div>
-                        <div class="product-title">
-                            <h2><?php echo $nume ?></h2>
-                        </div>
+                <div class="product-title">
+                        <h2>Titlu Produs: <?php echo $nume ?></h2>
+                    </div>
+                    <div class="product-image">
+                        <img src="<?php echo $product_image ?>"/>
+                    </div>
+                    <div class="product-price">
+                        <h3>Pret gluma: <?php echo $pret. " " ?>Lei</h3>
+                    </div>
+                    <div class="product-short-desc">
+                        <h3>Descriere: <?php echo $description ?></h3>
+                        <h3>Stoc: <?php echo $stoc ?></h3>
+                        <h3>Pret Oferta <?php echo $pret_oferta ?></h3>
+                        <h3>Categorie: <?php echo $categorie ?></h3>
+                    </div>
                 </div>
             </div>
 

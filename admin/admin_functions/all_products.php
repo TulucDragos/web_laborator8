@@ -22,12 +22,16 @@ if ($stmt = $mysqli->prepare($sql)) {
         <div class="row">
             <div class="col col-lg-6">
                 <div class="product">
-                        <div class="product-image">
-                            <img src="<?php echo $product_image ?>"/>
-                        </div>
-                        <div class="product-title">
-                            <h2><?php echo $nume ?></h2>
-                        </div>
+                    <div class="product-title">
+                        <h2>Titlu Produs: <?php echo $nume ?></h2>
+                    </div>
+                    <div class="product-image">
+                        <img src="<?php echo $product_image ?>"/>
+                    </div>
+                    <div class="product-price">
+                        <h3>Pret gluma: <?php echo $pret. " " ?>Lei</h3>
+                    </div>
+                        
                 </div>
             </div>
 

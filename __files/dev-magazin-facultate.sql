@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 03, 2019 at 08:26 PM
+-- Generation Time: Dec 10, 2019 at 03:24 PM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.10
 
@@ -113,7 +113,8 @@ CREATE TABLE `images` (
 
 INSERT INTO `images` (`id`, `file_name`) VALUES
 (1, 'amin.jpg'),
-(2, 'amin.jpg');
+(2, 'amin.jpg'),
+(3, '71349630_515409575693731_4509628399949447168_o.jpg');
 
 -- --------------------------------------------------------
 
@@ -140,7 +141,7 @@ CREATE TABLE `produs` (
 --
 
 INSERT INTO `produs` (`id`, `nume`, `pret`, `imagine`, `short_description`, `description`, `stoc`, `pret_oferta`, `recomandat`, `categorie`) VALUES
-(10, 'test12345', 2, 'amin.jpg', 'test', 'test', 2, 2, 'test', 'test');
+(13, 'Bugs Bunny', 80, '71349630_515409575693731_4509628399949447168_o.jpg', 'Bugs Bunny', 'Bugs Bunny Despre Bere', 5, 80, 'da', 'Bugs Bunny');
 
 --
 -- Indexes for dumped tables
@@ -218,13 +219,13 @@ ALTER TABLE `cos`
 -- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `produs`
 --
 ALTER TABLE `produs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Constraints for dumped tables

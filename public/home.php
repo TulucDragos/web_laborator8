@@ -11,7 +11,7 @@ if ($stmt = $mysqli->prepare($sql)) {
         $stmt->store_result();
         $stmt->bind_result($id, $nume, $pret, $imagine, $short_description, $description, $stoc, $pret_oferta, $recomandat, $categorie);
         ?>
-                <div class="row">
+        <div class="row">
         <?php
         while($stmt->fetch()) {
             $product_image = "/content/uploads/" . $imagine;
